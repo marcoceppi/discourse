@@ -7,7 +7,7 @@ class Users::OmniauthCallbacksController < ApplicationController
   layout false
 
   def self.types
-    @types ||= Enum.new(:facebook, :twitter, :google, :yahoo, :github, :persona, :cas)
+    @types ||= Enum.new(:facebook, :twitter, :google, :yahoo, :ubuntu, :github, :persona, :cas)
   end
 
   # need to be able to call this
@@ -244,6 +244,7 @@ class Users::OmniauthCallbacksController < ApplicationController
 
   alias_method :create_or_sign_on_user_using_yahoo, :create_or_sign_on_user_using_openid
   alias_method :create_or_sign_on_user_using_google, :create_or_sign_on_user_using_openid
+  alias_method :create_or_sign_on_user_using_ubuntu, :create_or_sign_on_user_using_openid
 
   def create_or_sign_on_user_using_github(auth_token)
 

@@ -140,6 +140,7 @@ class SiteSetting < ActiveRecord::Base
 
   client_setting(:enable_google_logins, true)
   client_setting(:enable_yahoo_logins, true)
+  client_setting(:enable_ubuntu_logins, true)
 
   client_setting(:enable_twitter_logins, true)
   setting(:twitter_consumer_key, '')

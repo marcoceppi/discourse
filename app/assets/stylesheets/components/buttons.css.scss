@@ -171,6 +171,13 @@
       content: "Y";
     }
   }
+  &.ubuntu {
+    background: $ubuntu;
+    &:before {
+      font-family: Ubuntu;
+      content: "U";
+    }
+  }
   &.github {
     background: $github;
     &:before {
