@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+/* Use the light textured image as the background of the page and use the Ubuntu font. */
+html {
+    background: url(http://assets.ubuntu.com/sites/ubuntu/latest/u/img/patterns/body_bg.jpg) !important;
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
+/* Links should be a nice orange. */
+a {
+    color: #dd4814;
+}
+
+a:hover,
+a:visited {
+    color: #eb9172;
+}
+
+/* Set the background color of the header bar to orange and adjust the border. */
+.d-header {
+    background-color: #dd4814;
+    border-bottom: 1px solid white;
+    box-shadow: 0 1px 2px #fff;
+}
+
+/* Remove the margin from the header. */
+.d-header .contents {
+    margin: 0;
+}
+
+/* Display the username as completely white and a block element. */
+.d-header .current-username a {
+    color: #fff;
+    display: block;
+    padding: 0 16px;
+}
+
+/* Get rid of the left border for the icon list. */
+.d-header .icons {
+    margin: 0;
+}
+
+/* Create the beveled border that separates each "button" in the header. This
+   is accomplished by creating a light border on the right of the outer containers. */
+.d-header .icons > li,
+.d-header .current-username {
+    border: none;
+    border-right: 1px solid rgb(92.407%,35.843%,16.102%);
+}
+
+/* Do the same for the inner elements, using a darker color this time. */
+.d-header .icons .icon,
+.d-header .current-username a {
+    border: none;
+    border-right: 1px solid rgb(77.497%,25.248%,7.013%) !important;
+}
+
+/* Get rid of the border radius for icons and other non-essential text effects. */
+.d-header .icons .icon {
+    border-radius: 0 !important;
+    box-shadow: none;
+    color: #eb9172;
+    padding: 4px 8px;
+}
+
+.d-header .icons .icon:hover,
+.d-header .current-username a:hover {
+    background-color: #e1662f;
+    color: white;
+}
+
+/* Buttons should be orange. */
+.btn-primary {
+    background: #e45735 !important;
+    border-color: #ac3d22;
+}
