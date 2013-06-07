@@ -77,6 +77,7 @@ module Oneboxer
        Entry.new(/^https?:\/\/(?:www\.)?kickstarter\.com\/.+/),
        Entry.new(/^https?:\/\/(?:www\.)?wired\.com\/.+/),
        Entry.new(/^https?:\/\/(?:www\.)?time\.com\/.+/),
+       Entry.new(/^https?:\/\/(?:www\.)?omgubuntu\.co\.uk\/.+/),
        Entry.new(/^https?:\/\/(?:www\.)?npr\.org\/.+/),
        Entry.new(/^https?:\/\/(?:www\.)?cracked\.com\/.+/),
        Entry.new(/^https?:\/\/(?:www\.)?deadline\.com\/.+/),
