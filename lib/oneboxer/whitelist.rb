@@ -12,7 +12,13 @@ module Oneboxer
   module Whitelist
     def self.entries
       [
-       Entry.new(/^https?:\/\/(?:www\.)?findery\.com\/.+/),
+       Entry.new(/^https?:\/\/(?:www\.)?launchpad\.net\/.+/),
+       Entry.new(/^https?:\/\/(?:www\.)?ubuntu\.com\/.+/),
+       Entry.new(/^https?:\/\/(?:www\.)?askubuntu\.com\/.+/),
+       Entry.new(/^https?:\/\/(?:www\.)?ubuntuforums\.org\/.+/),
+       Entry.new(/^https?:\/\/(?:www\.)?omgubuntu\.co.uk\/.+/),
+       Entry.new(/^https?:\/\/(?:www\.)?webupd8\.org\/.+/),
+       Entry.new(/^https?:\/\/(?:www\.)?iloveubuntu\.net\/.+/),
        Entry.new(/^https?:\/\/(?:www\.)?zappos\.com\/.+/),
        Entry.new(/^https?:\/\/(?:www\.)?slideshare\.net\/.+/),
        Entry.new(/^https?:\/\/(?:www\.)?rottentomatoes\.com\/.+/),
