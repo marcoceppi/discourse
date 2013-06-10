@@ -21,11 +21,36 @@ a:visited {
     background-color: #dd4814;
     border-bottom: 1px solid white;
     box-shadow: 0 1px 2px #fff;
+    height: 60px;
 }
 
 /* Remove the margin from the header. */
 .d-header .contents {
     margin: 0;
+}
+
+/* Make the header taller */
+.d-header .contents > div {
+    padding: 10px 0;
+}
+
+.d-header .contents .panel {
+    padding: 0;
+}
+
+.d-header .contents .current-username a {
+    padding: 10px 16px;
+}
+
+.d-header .contents .icons .icon {
+    padding: 14px 8px;
+}
+
+/* Fixes to extra-info */
+.extra-info-wrapper h1 .topic-link,
+.extra-info-wrapper h1 .topic-link:visited,
+.extra-info-wrapper h1 .topic-link:hover {
+    color: #FFF;
 }
 
 /* Display the username as completely white and a block element. */
