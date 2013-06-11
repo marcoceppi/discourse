@@ -11,9 +11,13 @@ a {
     color: #dd4814;
 }
 
-a:hover,
 a:visited {
-    color: #eb9172;
+    color: #c03f11;
+}
+
+a:hover {
+    color: #F47F31;
+    text-decoration: underline;
 }
 
 /* Set the background color of the header bar to orange and adjust the border. */
@@ -22,6 +26,11 @@ a:visited {
     border-bottom: 1px solid white;
     box-shadow: 0 1px 2px #fff;
     height: 60px;
+}
+
+.d-header #site-logo {
+    width: auto;
+    height: 40px;
 }
 
 /* Remove the margin from the header. */
@@ -88,14 +97,32 @@ a:visited {
     padding: 4px 8px;
 }
 
-.d-header .icons .icon:hover,
+.d-header .icons li:not(.active) .icon:hover,
 .d-header .current-username a:hover {
     background-color: #e1662f;
     color: white;
+    text-decoration: none;
+}
+
+.d-dropdown {
+    margin-top: 0;
+}
+
+.d-header .icons .active .icon {
+    color: #dd4814;
 }
 
 /* Buttons should be orange. */
 .btn-primary {
     background: #e45735 !important;
     border-color: #ac3d22;
+}
+
+#nav-global .nav-global-wrapper {
+    font-weight: 300;
+    width: 1112px !important;
+}
+
+#nav-global {
+    z-index: 9999 !important;
 }
