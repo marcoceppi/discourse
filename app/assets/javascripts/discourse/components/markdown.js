@@ -140,6 +140,17 @@ Discourse.Markdown = {
       });
     });
 
+    // Ubuntu and LP specific linking
+    converter.hooks.chain("preConversion", function(text) {
+      return text.replace(/(apt|lp):([a-zA-Z0-9-]+)/gim, function(full, protocol, name) {
+        if (protocol == "lp") {
+          return "<a href=\"https://code.launchpad.net/" + name + "\">" + full + "</a>";
+        } else {
+          return "<a href=\"https://apps.ubuntu.com/cat/applications/" + name + "/\">" + name + "</a>";
+        }
+      });
+    });
+
     converter.hooks.chain("postConversion", function(text) {
       if (!text) return "";
 
