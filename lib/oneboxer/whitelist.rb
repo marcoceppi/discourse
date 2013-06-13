@@ -84,6 +84,7 @@ module Oneboxer
        Entry.new(/^https?:\/\/(?:www\.)?theorangenotebook\.com\/.+/),
        Entry.new(/^https?:\/\/.+\.ubuntu\.com\/.+/),
        Entry.new(/^https?:\/\/.+\.canonical\.com\/.+/),
+       Entry.new(/^https?:\/\/.+\.ubuntu-podcast\.co\.uk\/.+/),
        Entry.new(/^https?:\/\/(?:www\.)?markshuttleworth\.com\/.+/),
        Entry.new(/^https?:\/\/(?:www\.)?jonobacon\.org\/.+/),
        Entry.new(/^https?:\/\/(?:www\.)?npr\.org\/.+/),
