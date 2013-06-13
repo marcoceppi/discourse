@@ -3,7 +3,9 @@
 /* Use the light textured image as the background of the page and use the Ubuntu font. */
 html {
     background: url(http://assets.ubuntu.com/sites/ubuntu/latest/u/img/patterns/body_bg.jpg) !important;
-    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+    font-family: "Ubuntu Light", "Ubuntu", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
 }
 
 /* Links should be a nice orange. */
@@ -17,7 +19,6 @@ a:visited {
 
 a:hover {
     color: #F47F31;
-    text-decoration: underline;
 }
 
 /* Set the background color of the header bar to orange and adjust the border. */
@@ -49,6 +50,10 @@ a:hover {
 
 .d-header .contents .current-username a {
     padding: 10px 16px;
+}
+
+.d-header .contents .current-username button {
+    margin: 18px 16px;
 }
 
 .d-header .contents .icons .icon {
@@ -116,6 +121,52 @@ a:hover {
 .btn-primary {
     background: #e45735 !important;
     border-color: #ac3d22;
+}
+
+#topic-list .main-link .title {
+    color: #333;
+}
+
+#topic-list .main-link .title:visited {
+    color: #111;
+}
+
+#topic-list .main-link .title:hover {
+    color: #666;
+    text-decoration: underline;
+}
+
+#topic-list .main-link .badge {
+    color: #fff;
+}
+
+body .coldmap-low {
+    color: #ddd !important;
+}
+
+body .coldmap-high {
+    color: #333 !important;
+}
+
+body .coldmap-med {
+    color: #AEA79F !important;
+}
+
+.d-header .icons .badge-notification {
+    top: 1px;
+}
+
+.nav-pills {
+    font-famil: "Ubuntu", "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.extra-info-wrapper .topic-status > .icon {
+    color: #fff;
+}
+
+#similar-topics {
+    border: inherit;
+    background-color: inherit;
 }
 
 #nav-global .nav-global-wrapper {
