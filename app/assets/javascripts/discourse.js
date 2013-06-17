@@ -302,7 +302,14 @@ Discourse = Ember.Application.createWithMixins({
     }
   },
 
+  /**
+    Fired when Discourse is fully set up.
 
+    @method ready
+  **/
+  ready: function() {
+    $.event.trigger("discourse:ready");
+  },
 
   /**
     Start up the Discourse application.
