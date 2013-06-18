@@ -87,6 +87,7 @@ module Oneboxer
        Entry.new(/^https?:\/\/.+\.ubuntu-podcast\.co\.uk\/.+/),
        Entry.new(/^https?:\/\/(?:www\.)?markshuttleworth\.com\/.+/),
        Entry.new(/^https?:\/\/(?:www\.)?jonobacon\.org\/.+/),
+       Entry.new(/^https?:\/\/(?:www\.)?xda-developers\.com\/.+/),
        Entry.new(/^https?:\/\/(?:www\.)?npr\.org\/.+/),
        Entry.new(/^https?:\/\/(?:www\.)?cracked\.com\/.+/),
        Entry.new(/^https?:\/\/(?:www\.)?deadline\.com\/.+/),
