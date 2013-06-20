@@ -177,3 +177,11 @@ body .coldmap-med {
 #nav-global {
     z-index: 9999 !important;
 }
+
+.extra-info-wrapper h1 .topic-link {
+    text-overflow: ellipsis;
+    max-width: 750px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+}
