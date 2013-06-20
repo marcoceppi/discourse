@@ -142,7 +142,8 @@ Discourse.Markdown = {
 
     // Ubuntu and LP specific linking
     converter.hooks.chain("preConversion", function(text) {
-      return text.replace(/(^|[\s\n])(apt|lp):([a-zA-Z0-9-]+)/gim, function(full, _, protocol, name) {
+      #return text.replace(/(^|[\s\n])(apt|lp):([a-zA-Z0-9-]+)/gim, function(full, _, protocol, name) {
+      return text.replace(/(^|[\s\n])(apt):([a-zA-Z0-9-]+)/gim, function(full, _, protocol, name) {
         if (protocol == "lp") {
           return "<a href=\"https://code.launchpad.net/" + name + "\">" + full + "</a>";
         } else {
