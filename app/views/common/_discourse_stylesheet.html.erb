@@ -1,5 +1,6 @@
 <%- unless SiteCustomization.override_default_style(session[:preview_style]) %>
   <%=stylesheet_link_tag "application"%>
+  <%=stylesheet_link_tag "ubuntu"%>
 <%- end %>
 
 <%- if staff? %>
