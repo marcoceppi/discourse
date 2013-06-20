@@ -16,6 +16,9 @@
       {{#if Discourse.SiteSettings.enable_yahoo_logins}}
         <button class="btn btn-social yahoo" title="{{i18n login.yahoo.title}}" {{action openidLogin "yahoo"}}>{{i18n login.yahoo.title}}</button>
       {{/if}}
+      {{#if Discourse.SiteSettings.enable_ubuntu_logins}}
+        <button class="btn btn-social ubuntu" title="{{i18n login.ubuntu.title}}" {{action openidLogin "ubuntu"}}>{{i18n login.ubuntu.title}}</button>
+      {{/if}}
       {{#if Discourse.SiteSettings.enable_github_logins}}
         <button class="btn btn-social github" title="{{i18n login.github.title}}" {{action "githubLogin"}}>{{i18n login.github.title}}</button>
       {{/if}}
