@@ -3,6 +3,9 @@
 /* Use the light textured image as the background of the page and use the Ubuntu font. */
 html {
     background: url(http://assets.ubuntu.com/sites/ubuntu/latest/u/img/patterns/body_bg.jpg) !important;
+}
+
+html, .body-page {
     font-family: "Ubuntu Light", "Ubuntu", Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 16px;
