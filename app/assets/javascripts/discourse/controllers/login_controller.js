@@ -26,6 +26,7 @@ Discourse.LoginController = Discourse.Controller.extend(Discourse.ModalFunctiona
            Discourse.SiteSettings.enable_cas_logins ||
            Discourse.SiteSettings.enable_twitter_logins ||
            Discourse.SiteSettings.enable_yahoo_logins ||
+           Discourse.SiteSettings.enable_ubuntu_logins ||
            Discourse.SiteSettings.enable_github_logins ||
            Discourse.SiteSettings.enable_persona_logins;
   }.property(),
@@ -109,6 +110,9 @@ Discourse.LoginController = Discourse.Controller.extend(Discourse.ModalFunctiona
     if (provider === "yahoo") {
       this.set("authenticate", 'yahoo');
       return window.open(Discourse.getURL("/auth/yahoo"), "_blank", "menubar=no,status=no,height=400,width=800,left=" + left + ",top=" + top);
+    } else if (provider === "ubuntu") {
+      this.set("authenticate", 'ubuntu');
+      return window.open(Discourse.getURL("/auth/ubuntu"), "_blank", "menubar=no,status=no,height=610,width=980,left=" + left + ",top=" + top);
     } else {
       window.open(Discourse.getURL("/auth/google"), "_blank", "menubar=no,status=no,height=500,width=850,left=" + left + ",top=" + top);
       return this.set("authenticate", 'google');
