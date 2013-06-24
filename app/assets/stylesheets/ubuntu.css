@@ -167,11 +167,6 @@ body .coldmap-med {
     color: #fff;
 }
 
-#similar-topics {
-    border: inherit;
-    background-color: inherit;
-}
-
 #nav-global .nav-global-wrapper {
     font-weight: 300;
     width: 1112px !important;
@@ -187,4 +182,9 @@ body .coldmap-med {
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
+}
+
+#similar-topics {
+    background-color: #ffc;
+    border: 1px solid #cc0;
 }
