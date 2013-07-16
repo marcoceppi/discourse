@@ -18,6 +18,12 @@ Rails.application.config.middleware.use OmniAuth::Builder do
            :identifier => 'https://me.yahoo.com',
            :require => 'omniauth-openid'
 
+  provider :open_id,
+           :store => OpenID::Store::Redis.new($redis),
+           :name => 'ubuntu',
+           :identifier => 'https://login.ubuntu.com',
+           :require => 'omniauth-openid'
+
   # lambda is required for proper multisite support, 
   #  without it subdomains will not function correctly 
   provider :facebook,
