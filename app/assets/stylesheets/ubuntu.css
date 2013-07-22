@@ -178,7 +178,7 @@ body .coldmap-med {
 
 .extra-info-wrapper h1 .topic-link {
     text-overflow: ellipsis;
-    max-width: 750px;
+    max-width: 720px;
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
