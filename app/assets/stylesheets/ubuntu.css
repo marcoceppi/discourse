@@ -66,7 +66,8 @@ a:hover {
 /* Fixes to extra-info */
 .extra-info-wrapper h1 .topic-link,
 .extra-info-wrapper h1 .topic-link:visited,
-.extra-info-wrapper h1 .topic-link:hover {
+.extra-info-wrapper h1 .topic-link:hover,
+.extra-info-wrapper h1 .topic-statuses {
     color: #FFF;
 }
 
