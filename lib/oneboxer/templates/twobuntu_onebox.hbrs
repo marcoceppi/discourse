@@ -1,0 +1,34 @@
+<div class='onebox-result'>
+
+  {{#host}}
+    <div class="source">
+      <div class="info">
+        <a href="{{original_url}}" class="track-link" target="_blank">
+          {{#favicon}}
+            <img class="favicon" src="{{favicon}}">
+          {{/favicon}}
+          {{host}}
+        </a>
+      </div>
+    </div>
+  {{/host}}
+  
+  <div class='onebox-result-body'>
+    <img src="http://gravatar.com/avatar/{{author.email_hash}}?s=96&d=identicon" class="thumbnail">
+    
+    {{#title}}
+      <h3><a href="{{original_url}}" target="_blank">{{title}}</a></h3>
+    {{/title}}
+    
+    {{#creation_date}}
+      <p>
+        <em>written by {{author.name}} on {{creation_date}}</em>
+      </p>
+    {{/creation_date}}
+    
+    {{#body}}
+      {{{body}}}
+    {{/body}}
+  </div>
+  
+</div>
